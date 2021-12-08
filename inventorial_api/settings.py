@@ -65,11 +65,11 @@ MIDDLEWARE = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
-# CORS_ALLOWED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
+CORS_ALLOWED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
 
-# CSRF_TRUSTED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
+CSRF_TRUSTED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
 
 ROOT_URLCONF = 'inventorial_api.urls'
 
