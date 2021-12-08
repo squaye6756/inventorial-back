@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'users_api',
     'items_api',
+    'stores_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -64,9 +65,11 @@ MIDDLEWARE = [
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CORS_ALLOWED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
+CORS_ALLOW_ALL_ORIGINS = True
 
-CSRF_TRUSTED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
+# CORS_ALLOWED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
+
+# CSRF_TRUSTED_ORIGINS = ['https://zen-roentgen-9e644e.netlify.app']
 
 ROOT_URLCONF = 'inventorial_api.urls'
 
