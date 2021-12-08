@@ -6,4 +6,4 @@ class Item(models.Model):
     name = models.CharField(max_length=64)
     price = models.IntegerField()
     quantity = models.IntegerField()
-    store = models.ForeignKey(Store, on_delete=models.CASCADE, null=True)
+    # store = models.ForeignKey(Store, on_delete=models.CASCADE, null=True)
